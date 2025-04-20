@@ -1,8 +1,10 @@
 import React from "react";
 import bookImg from "../../assets/books.jpg";
 import Books from "../Books/Books";
+import { useLoaderData } from "react-router";
 
 const Home = () => {
+  const data = useLoaderData();
   return (
     <div>
       {/* banner */}
@@ -26,7 +28,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Books></Books>
+      <Books data={data}></Books>
     </div>
   );
 };
