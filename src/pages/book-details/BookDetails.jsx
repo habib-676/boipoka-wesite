@@ -18,8 +18,8 @@ const BookDetails = () => {
         <h2 className="text-5xl font-semibold">{bookName}</h2>
         <p>{review}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-neutral">Read</button>
-          <button className="btn btn-info text-white">Wishlist</button>
+          <button className="btn btn-neutral">Mark as Read</button>
+          <button className="btn btn-info text-white">Add to Wishlist</button>
         </div>
       </div>
     </div>
